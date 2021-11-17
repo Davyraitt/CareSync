@@ -1,0 +1,49 @@
+{
+  "paths": [
+    {
+      "name": "/Database",
+      "lambdaFunction": "CareSyncLambda",
+      "privacy": {
+        "protected": true,
+        "auth": [
+          "/POST",
+          "/GET",
+          "/PUT",
+          "/PATCH",
+          "/DELETE"
+        ],
+        "unauth": [
+          "/POST",
+          "/GET",
+          "/PUT",
+          "/PATCH",
+          "/DELETE"
+        ]
+      },
+      "policyResourceName": "/Database"
+    }
+  ],
+  "resourceName": "CareSyncAPI",
+  "apiName": "CareSyncAPI",
+  "functionArns": [
+    {
+      "lambdaFunction": "CareSyncLambda"
+    }
+  ],
+  "privacy": {
+    "auth": 1,
+    "unauth": 1,
+    "authRoleName": "amplify-caresync-dev-143501-authRole",
+    "unAuthRoleName": "amplify-caresync-dev-143501-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "CareSyncLambda",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}

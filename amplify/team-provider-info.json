@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-caresync-dev-143501-authRole",
+      "UnauthRoleArn": "arn:aws:iam::823124742693:role/amplify-caresync-dev-143501-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::823124742693:role/amplify-caresync-dev-143501-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-caresync-dev-143501-deployment",
+      "UnauthRoleName": "amplify-caresync-dev-143501-unauthRole",
+      "StackName": "amplify-caresync-dev-143501",
+      "StackId": "arn:aws:cloudformation:eu-west-1:823124742693:stack/amplify-caresync-dev-143501/2bf307d0-47ab-11ec-939f-02aa8b4290bf",
+      "AmplifyAppId": "d35fv7wz8r2wj3"
+    },
+    "categories": {
+      "auth": {
+        "cognitobc7716cd": {}
+      },
+      "function": {
+        "CareSyncLambda": {
+          "deploymentBucketName": "amplify-caresync-dev-143501-deployment",
+          "s3Key": "amplify-builds/CareSyncLambda-586e4c4e572b782f4830-build.zip"
+        }
+      }
+    }
+  }
+}
